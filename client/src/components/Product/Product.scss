@@ -1,0 +1,49 @@
+.Product{
+    cursor: pointer;
+    width: 23%;
+
+    .product-container{
+        border: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+        .product-img{
+            height: 300px;
+            width: 100%;
+            position: relative;
+
+            .img-container{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: 0.3s ease ;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+
+                }
+            }
+        }
+
+        .product-info{
+            text-align: center;
+
+            .title{
+                margin-block: 16px;
+            }
+            .price{
+                color: var(--primary-text-color);
+                font-weight: 700;
+                margin-block: 16px;
+            }
+        }
+        
+    }
+
+
+    #img:hover{
+    transform: scale(1.01) ;
+    }
+}
